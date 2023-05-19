@@ -14,9 +14,9 @@ Our results show that our model can accurately predict crime occurrences and can
 potentially be a valuable resource for law enforcement agencies.
 
 
-Introduction
+# Introduction
 
-Problem Statement
+## Problem Statement
 Crime is a pervasive issue that affects communities worldwide, and despite efforts to
 combat it, it continues to persist. The use of machine learning and time-series
 forecasting techniques has the potential to provide valuable insights and aid in
@@ -24,7 +24,7 @@ decision-making for law enforcement agencies to address this problem. However, t
 is still a lack of research evaluating the effectiveness of these techniques in predicting
 criminal activity.
 
-Background
+## Background
 Various studies have been conducted on crime prediction, including using pattern-based
 density models, spatiotemporal event analysis, and classification techniques like Naive
 Bayes and Neural Networks. Time series analysis has also been used, with the ARIMA
@@ -38,14 +38,14 @@ gap by evaluating the efficacy of these techniques in predicting criminal activi
 providing insights for law enforcement agencies to make data-driven decisions.
 
 
-Proposed Work
+## Proposed Work
 The proposed work aims to develop a crime forecasting and analysis system using
 machine learning algorithms. The system will be trained on historical crime data and
 various other datasets such as weather data and geospatial data to predict future criminal
 activities. The following research papers will be used as a reference to develop the
 proposed system.
 
-Methodology
+## Methodology
 We have used the Los Angeles Crime Data from 2010 to 2019 which was openly
 available on Kaggle. The dataset includes various parameters including the Date of
 Crime, Type of crime, and areas in which it occurs. We have used time-series forecasting
@@ -54,6 +54,7 @@ and the Facebook Prophet model. Both Prophet and ARIMA (Autoregressive Integrate
 Moving Average) are time series forecasting methods that can be used to predict the
 future values of a series based on its past values.
 
+### Prophet 
 Prophet is a library developed by Facebook that is specifically designed for forecasting
 time series data. It is based on a decomposable time series model that is fit to the data
 using a variant of the Generalized Additive Model (GAM) optimization algorithm. The
@@ -61,6 +62,7 @@ Prophet model decomposes the time series into trend, seasonality, and holidays
 components, and then fits a linear model to predict the trend component. The seasonality
 and holidays components are then added back in to produce the final forecast.
 
+### ARIMA 
 ARIMA is a widely used statistical method for time series forecasting. It is a linear
 model that is fit to the data using the maximum likelihood estimation method. ARIMA
 models are based on the idea that the time series can be decomposed into three
@@ -70,6 +72,7 @@ degree of difference, and the order of the moving average (MA) component,
 respectively. The model is fit to the data by finding the values of these three integers that
 minimize the sum of the squared errors between the predicted and actual values.
 
+### Random forest 
 Random forest is an ensemble learning algorithm that constructs multiple decision trees
 and averages their outputs to make a final prediction. In the context of time series
 forecasting, random forest regressor can be used to predict future values based on
@@ -78,6 +81,7 @@ and external factors. Random forest regressor is often used in cases where the t
 series data has a non-linear relationship with the target variable, and where there may be
 multiple interacting features that impact the target variable.
 
+### Long Short-Term Memory (LSTM) 
 Long Short-Term Memory (LSTM) is a type of recurrent neural network (RNN)
 architecture that is designed to handle sequential data, such as time series. LSTM is
 well-suited for time series forecasting tasks as it is able to capture long-term
@@ -86,6 +90,7 @@ in handling complex time series data with multiple input variables and non-linea
 relationships. LSTM models typically require more data and training time compared to
 other algorithms, but can deliver highly accurate predictions in some cases.
 
+### XGBoost 
 XGBoost is a popular gradient boosting algorithm that is often used in time series
 forecasting. Gradient boosting is an ensemble learning technique that combines multiple
 weak models into a stronger model. XGBoost is designed to handle both regression and
